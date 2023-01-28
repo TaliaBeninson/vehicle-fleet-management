@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>ADD employee</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+  <script src="/js/employee_utils.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+
+  </script> <!-- load our javascript file -->
+</head>
+
+<body>
+  <div id="marge">
+    <div class="col-sm-6 col-sm-offset-3">
+      <button id="back" class="btn btn-outline-info btn-sm" onclick="back()">back</button>
+
+      <h1>add new employee</h1>
+      <form id="conference_form" name="user_form" method="POST">
+
+        <!-- employee_id -->
+        <div id="name-group" class="form-group">
+          <label for="employee_id">id of employee</label>
+          <input type="number" class="form-control" name="employee_id" id="employee_id"
+            placeholder="write id of employee here" required>
+          <span class="error" id="employee_id-error"></span>
+        </div>
+
+        <!-- name -->
+        <div id="name-group" class="form-group">
+          <label for="name">username of employee:</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="write name of employee here"
+            required>
+          <span class="error" id="name-error"></span>
+        </div>
+
+        <!-- email -->
+        <div id="name-group" class="form-group">
+          <label for="email">email of employee:</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="write email here" required>
+          <span class="error" id="email-error"></span>
+
+          <!-- role -->
+          <div id="name-group" class="form-group">
+            <label for="role">role of employee:</label>
+            <input type="text" class="form-control" id="role" name="role" placeholder="write role here" required>
+            <span class="error" id="role-error"></span>
+
+          </div>
+      </form>
+      <button id="submit" onclick="add_func()" type="submit" class="btn btn-success">Submit</button>
+
+    </div>
+  </div>
+</body>
+
+</html>

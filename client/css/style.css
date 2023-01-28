@@ -1,0 +1,62 @@
+#center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 80%;
+}
+
+#marge{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    vertical-align: middle;
+}
+
+#addButton {
+    background-color: rgb(36, 166, 8);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 2px rgb(34, 166, 8);
+    margin-bottom: auto;
+}
+
+#select-button {
+    display: block;
+    margin-left: auto;
+    /* margin-right: auto; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#lectures {
+    width: 100%;
+}
+
+#series_number_div {
+    display: none;
+
+}
+
+.error {
+    color: red;
+}
+
+#back {
+    /* margin-top: 20%; */
+    float: right;
+}
+
+td,th {
+    /* text-align: center; */
+    font-size: 14px;
+    width: min-content;
+    text-align: right;
+}

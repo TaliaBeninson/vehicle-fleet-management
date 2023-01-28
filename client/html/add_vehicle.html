@@ -1,0 +1,160 @@
+<!-- index.html -->
+<!doctype html>
+<html>
+
+<head>
+  <title>ADD vehicle</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+  <script src="/js/vehicle_utils.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+  </script>
+</head>
+
+<body>
+  
+  <div id="marge">
+  <div class="col-sm-6 col-sm-offset-3">
+    <button id="back" class="btn btn-outline-info btn-sm" onclick="back()">back</button>
+    <h1>add new vehicle</h1>
+    <form class="error" id="conference_form" name="user_form" method="POST">
+
+      <!-- car_id -->
+      <div id="name-group" class="form-group">
+        <label for="car_id">vehicle number plate</label>
+        <input type="text" class="form-control" name="car_id" id="car_id" placeholder="write conference name here"
+          required>
+        <span class="error" id="car_id-error"></span>
+      </div>
+
+      <!-- name_car -->
+      <div id="name-group" class="form-group">
+        <label for="name_car">Name of vehicle</label>
+        </select><select name="name_car" id="name_car" class="form-control">
+          <option value="" disabled selected>select car company</option>
+          <option value="ACURA">ACURA</option>
+          <option value="ASTON MARTIN">ASTON MARTIN</option>
+          <option value="AUDI">AUDI</option>
+          <option value="BENTLEY">BENTLEY</option>
+          <option value="BMW">BMW</option>
+          <option value="BUICK">BUICK</option>
+          <option value="CADILLAC">CADILLAC</option>
+          <option value="CHEVROLET">CHEVROLET</option>
+          <option value="CHRYSLER">CHRYSLER</option>
+          <option value="DODGE">DODGE</option>
+          <option value="FERRARI">FERRARI</option>
+          <option value="FORD">FORD</option>
+          <option value="GMC">GMC</option>
+          <option value="HONDA">HONDA</option>
+          <option value="HUMMER">HUMMER</option>
+          <option value="HYUNDAI">HYUNDAI</option>
+          <option value="INFINITI">INFINITI</option>
+          <option value="ISUZU">ISUZU</option>
+          <option value="JAGUAR">JAGUAR</option>
+          <option value="JEEP">JEEP</option>
+          <option value="KIA">KIA</option>
+          <option value="LAMBORGHINI">LAMBORGHINI</option>
+          <option value="LAND ROVER">LAND ROVER</option>
+          <option value="LEXUS">LEXUS</option>
+          <option value="LINCOLN">LINCOLN</option>
+          <option value="LOTUS">LOTUS</option>
+          <option value="MASERATI">MASERATI</option>
+          <option value="MAYBACH">MAYBACH</option>
+          <option value="MAZDA">MAZDA</option>
+          <option value="MERCEDES-BENZ">MERCEDES-BENZ</option>
+          <option value="MERCURY">MERCURY</option>
+          <option value="MINI">MINI</option>
+          <option value="MITSUBISHI">MITSUBISHI</option>
+          <option value="NISSAN">NISSAN</option>
+          <option value="PONTIAC">PONTIAC</option>
+          <option value="PORSCHE">PORSCHE</option>
+          <option value="ROLLS-ROYCE">ROLLS-ROYCE</option>
+          <option value="SAAB">SAAB</option>
+          <option value="SATURN">SATURN</option>
+          <option value="SUBARU">SUBARU</option>
+          <option value="SUZUKI">SUZUKI</option>
+          <option value="TOYOTA">TOYOTA</option>
+          <option value="VOLKSWAGEN">VOLKSWAGEN</option>
+          <option value="VOLVO">VOLVO</option>
+        </select>
+        <span class="error" id="name_car-error"></span>
+      </div>
+
+
+      <!-- year_car -->
+      <div id="name-group" class="form-group">
+        <label for="year_car">year of vehicle:</label>
+      </select><select class="form-control" id="year_car" name="year_car" placeholder="year_car" required>
+        <option value="" disabled selected>select car year</option>
+        <option value="2022">2022</option>
+        <option value="2021">2021</option>
+        <option value="2020">2020</option>
+        <option value="2019">2019</option>
+        <option value="2018">2018</option>
+        <option value="2017">2017</option>
+        <option value="2016">2016</option>
+        <option value="2015">2015</option>
+        <option value="2014">2014</option>
+        <option value="2013">2013</option>
+        <option value="2012">2012</option>
+        <option value="2011">2011</option>
+        <option value="2010">2010</option>
+        <option value="2009">2009</option>
+        <option value="2008">2008</option>
+        <option value="2007">2007</option>
+        <option value="2006">2006</option>
+        <option value="2005">2005</option>
+        <option value="2004">2004</option>
+        <option value="2003">2003</option>
+        <option value="2002">2002</option>
+        <option value="2001">2001</option>
+        <option value="2000">2000</option>
+        <option value="1999">1999</option>
+        <option value="1998">1998</option>
+        <option value="1997">1997</option>
+        <option value="1996">1996</option>
+        <option value="1995">1995</option>
+        <option value="1994">1994</option>
+        <option value="1993">1993</option>
+        <option value="1992">1992</option>
+        <option value="1991">1991</option>
+        <option value="1990">1990</option>
+        </select>
+        <span class="error" id="year_car-error"></span>
+      </div>
+
+
+      <!-- type_car -->
+      <div id="name-group" class="form-group">
+        <label for="type_car">type of vehicle:</label>
+        <label class="form-control"><input type="radio" name="choice" value="Government"> Government </label>
+        <label class="form-control"><input type="radio" name="choice" value="Personal"> Personal</label>
+        <span class="error" id="type_car-error"></span>
+      </div>
+
+      <!-- receive_date -->
+      <div id="name-group" class="form-group">
+        <label for="receive_date">Date:</label>
+        <input type="date" id="receive_date" name="receive_date" class="form-control" name="receive_date"
+          pattern="\d{2}/\d{2}/\d{4}" placeholder="Enter date in the format dd/mm/yyyy" required>
+        <span class="error" id="receive_date-error"></span>
+      </div>
+
+    </form>
+    <button id="submit" onclick="addCon()" type="submit" class="btn btn-success">Submit</button>
+
+  </div>
+</div>
+</body>
+
+</html>

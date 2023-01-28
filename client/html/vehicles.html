@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="/js/display_vehicle.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <meta charset="UTF-8">
+
+</head>
+<script>
+</script>
+
+</head>
+
+<body>
+    <nav>
+        <a href="#">HOME</a>
+        <a href="#">VEHICLE</a>
+        <a href="#">EMPLOYEES</a>
+        <div id="indicator"></div>
+      </nav>
+  <div id="center">
+    <select id="select-button" class="form-select" aria-label="Default select example">
+      <option selected>sort</option>
+      <option value="1">Date</option>
+      <option value="2">Name</option>
+    </select>
+    <table id="table" class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col" style="text-align:center; font-size:10px;"></th>
+          <th scope="col" style="text-align:center; font-size:10px;">טיפולים</th>
+          <th scope="col" style="text-align:center; font-size:10px;">תמונה</th>
+          <th scope="col" style="text-align:center; font-size:10px;">תאריכים</th>
+          <th scope="col" style="text-align:center; font-size:10px;">רכב</th>
+          <th scope="col" style="text-align:center; font-size:10px;"></th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+      </tbody>
+    </table>
+    <button id="addButton" class="btn btn-success" onclick="add_vehicle()">add vehicle</button>
+    <!-- <button id="addButton" class="btn btn-success" onclick="add_lecture()">add lecture</button> -->
+
+    <!-- <div id="dialog" title="Select a lecture">
+      <select class="form-select" name="lectures" id="lectures"></select>
+    </div> -->
+
+</body>
+<script src="/js/index.js"></script>
+
+<!-- <script src="/js/lecture_conference.js"></script> -->
+
+</html>
